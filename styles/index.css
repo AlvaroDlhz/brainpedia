@@ -123,7 +123,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(127, 255, 212, 0);
+    background-color: rgba(30, 192, 138, 0);
+    padding: 1rem;
     width: 100%;
 }
 .search-input{
@@ -135,7 +136,8 @@ h1{
     background-color: rgba(0, 0, 0, 0);
 }
 .search-input:focus{
-    outline: 3px solid rgb(100, 24, 109);
+    outline: 3px solid rgba(100, 24, 109, 0.418);
+    border: 2px solid rgba(100, 24, 109, 0);
 }
 .search-button{
     background-color: rgb(255, 255, 255);

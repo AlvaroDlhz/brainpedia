@@ -22,17 +22,24 @@ body{
     justify-content: space-between;
 }
 .header{
-    grid-area: header;
-    background-color: rgba(0, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-color: var(--background-color);
     border-bottom: 1px solid rgba(255, 255, 255, 0.11);
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     background-color: rgba(65, 105, 225, 0);
     overflow: hidden;
+    width: 100%;
 }
 .navbar-logo{
     display: flex;
@@ -48,26 +55,30 @@ body{
     color: var(--text-color-white);
     background-color: rgba(255, 192, 203, 0);
     text-decoration: none;
-    opacity: 0;
+    opacity: 1;
 }
 .navbar-links{
     display: flex;
     justify-content: end;
-    align-items: start;
+    align-items: center;
     background-color: rgba(255, 0, 0, 0);
     width: 100%;
+    height: 100%;
     margin: auto 0;
     overflow: hidden;
 }
 .navbar-links ul{
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(250, 128, 114, 0);
     overflow: hidden;
 }
 .navbar-links ul li{
+    display: flex;
+    height: 100%;
     list-style: none;
     margin: 0 0 0 auto;
     background-color: rgba(33, 43, 179, 0);
@@ -75,11 +86,41 @@ body{
 }
 .navbar-links ul li a{
     text-decoration: none;
-    color: #f5f5f550;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    animation: login-button 4s infinite ease-in-out; 
+    
 }
 .navbar-links ul li a:hover{
-    color: #f5f5f5;
+    color: #00000a;
+    animation: none;
+    background-image: linear-gradient(120deg, #65f6a6, #8d85fd);
 }
+@keyframes login-button {
+    0%{
+        border: 1px solid #a965f6;
+
+    }
+    25%{
+        border:1px solid #85fdc5;
+        transition: 0.5s;
+    }
+    50%{
+        border: 1px solid #fd8585;
+        transition: 0.5s;
+    }
+    75%{
+        border: 1px solid #fdd785;
+        transition: 0.5s;
+    }
+    100%{
+        border: 1px solid #a965f6;
+        transition: 0.5s;
+    }
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -103,7 +144,8 @@ body{
 h1{
     font-size: 4rem;
     font-family: "harabara";
-    background-image: linear-gradient(45deg, #a965f6, #fda085);
+    /*background-image: linear-gradient(45deg, #a965f6, #fda085);*/
+    background-image: linear-gradient(120deg, #65f6a6, #8d85fd);
     -webkit-text-fill-color: #00000a00;
     -webkit-background-clip: text;
 }

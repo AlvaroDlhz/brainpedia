@@ -168,7 +168,7 @@ h1{
     width: 100%;
 }
 .search-input{
-    padding: 1rem;
+    padding: 0.5rem;
     border: 2px solid rgba(255, 255, 255, 0.11);
     color: var(--text-color-white);
     border-radius: 9999px;
@@ -180,15 +180,21 @@ h1{
     border: 2px solid rgba(100, 24, 109, 0);
 }
 .search-button{
-    background-color: rgb(255, 255, 255);
-    color: var(--text-color-white);
-    padding: 1rem 2rem
+    background-color: rgb(192, 192, 192);
+    margin-top: 0.5rem;
+    color: var(--background-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
     border: none;
-    border-radius: 10px
+    border-radius: 10px;
+}
+.search-button:hover{
+    background-color: rgb(255, 255, 255);
+    
 }
 .search-filters{
     grid-area: search-filters;
-    display: none
+    display: none;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0);

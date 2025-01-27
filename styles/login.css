@@ -23,3 +23,21 @@ body{
     grid-template-rows: 4rem auto 4rem;
     height: 100vh;
 }
+.main-login{
+    background-color: rgba(127, 255, 212, 0);
+    padding: 2rem;
+    width: 100vw;
+    min-height: 100vh;
+}
+.explanation{
+    background-color: blue;
+    height: 100%;
+}
+.title{
+    padding: 2rem;
+    background-color: aquamarine;
+}
+.explanation-p{
+    padding: 2rem;
+    background-color: rgb(193, 127, 255);
+}

@@ -2,8 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-left: 1px solid rgba(255, 255, 255, 0.11); 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 @font-face {
     font-family: "harabara";
@@ -29,15 +42,48 @@ body{
     width: 100vw;
     min-height: 100vh;
 }
+h1{
+    text-align: center;
+}
 .explanation{
-    background-color: blue;
-    height: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    
 }
 .title{
     padding: 2rem;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0);
 }
 .explanation-p{
+    padding: 2rem 0;
+    background-color: rgba(193, 127, 255, 0);
+    
+}
+.help-us{
     padding: 2rem;
-    background-color: rgb(193, 127, 255);
+    background-color: rgba(127, 255, 212, 0);
+}
+.purchases{
+    padding: 2rem;
+    background-color: rgba(223, 222, 138, 0);
+}
+.purchases-card-one{
+    border: 2px solid rgba(255, 255, 255, 0.137);
+    border-radius: 15px;
+    min-height: 35rem;
+    max-width: 24rem;
+    margin-top: 2rem;
+}
+.purchases-card-two{
+    border: 2px, solid rgb(35, 255, 182);
+    border-radius: 15px;
+    min-height: 35rem;
+    max-width: 24rem;
+    margin-top: 2rem;
+}
+.purchases-card-three{
+    border: 2px solid rgb(161, 42, 252);
+    border-radius: 15px;
+    min-height: 35rem;
+    max-width: 24rem;
+    margin-top: 2rem;
 }
